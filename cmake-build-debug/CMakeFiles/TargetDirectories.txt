@@ -1,5 +1,0 @@
-/Users/pavelkasila/CLionProjects/sorting-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/pavelkasila/CLionProjects/sorting-project/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/pavelkasila/CLionProjects/sorting-project/cmake-build-debug/boilerplate/CMakeFiles/rebuild_cache.dir
-/Users/pavelkasila/CLionProjects/sorting-project/cmake-build-debug/boilerplate/CMakeFiles/edit_cache.dir
-/Users/pavelkasila/CLionProjects/sorting-project/cmake-build-debug/boilerplate/CMakeFiles/boilerplate.dir
