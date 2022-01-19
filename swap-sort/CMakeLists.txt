@@ -1,0 +1,1 @@
+add_executable(swap-sort main.cpp)

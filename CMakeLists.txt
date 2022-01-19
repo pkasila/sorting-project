@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(boilerplate)
 add_subdirectory(merge-sort)
+add_subdirectory(swap-sort)
 add_subdirectory(random)
