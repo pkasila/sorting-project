@@ -1,0 +1,1 @@
+add_executable(insertion-sort main.cpp)
