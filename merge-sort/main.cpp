@@ -44,9 +44,28 @@ void merge_sort(vector<int> &v, int s, int e) {
     }
 }
 
-int main() {
-    std::ifstream fin("input.txt");
-    std::ofstream fout("merge-sort.txt");
+static int find_keyword(int argc, char *argv[], const char *keyword) {
+    for (int i = 0; i < argc; i++) {
+        if (strcmp(argv[i], keyword) == 0) return i;
+    }
+    return -1;
+}
+
+int main(int argc, char *argv[]) {
+    const int inIndex = find_keyword(argc, argv, "-in");
+    if (inIndex < 0) {
+        printf("No -in keyword found!  Exiting!\n");
+        exit(10);
+    }
+
+    const int outIndex = find_keyword(argc, argv, "-out");
+    if (outIndex < 0) {
+        printf("No -out keyword found!  Exiting!\n");
+        exit(10);
+    }
+
+    ifstream fin(argv[inIndex + 1]);
+    ofstream fout(argv[outIndex + 1]);
 
     int n;
     vector<int> v;

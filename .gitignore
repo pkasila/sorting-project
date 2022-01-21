@@ -14,5 +14,10 @@ cmake-build-debug
 out/text*
 .DS_Store
 
+insertion-sort/insertion-sort
+merge-sort/merge-sort
+quick-sort/quick-sort
 random/random
+selection-sort/selection-sort
+swap-sort/swap-sort
 data

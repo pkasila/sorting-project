@@ -23,9 +23,29 @@ void quicksort(std::vector<int> &mas, int first, int last) {
     if (f < last) quicksort(mas, f, last);
 }
 
-int main() {
-    std::ifstream fin("input.txt");
-    std::ofstream fout("quick-sort.txt");
+static int find_keyword(int argc, char *argv[], const char *keyword) {
+    for (int i = 0; i < argc; i++) {
+        if (strcmp(argv[i], keyword) == 0) return i;
+    }
+    return -1;
+}
+
+int main(int argc, char *argv[]) {
+    const int inIndex = find_keyword(argc, argv, "-in");
+    if (inIndex < 0) {
+        printf("No -in keyword found!  Exiting!\n");
+        exit(10);
+    }
+
+    const int outIndex = find_keyword(argc, argv, "-out");
+    if (outIndex < 0) {
+        printf("No -out keyword found!  Exiting!\n");
+        exit(10);
+    }
+
+    std::ifstream fin(argv[inIndex + 1]);
+    std::ofstream fout(argv[outIndex + 1]);
+
     int numbers;
     fin >> numbers;
     std::vector<int> Massive(numbers);
