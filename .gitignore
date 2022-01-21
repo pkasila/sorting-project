@@ -13,3 +13,6 @@ _deps
 cmake-build-debug
 out/text*
 .DS_Store
+
+random/random
+data
