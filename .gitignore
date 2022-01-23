@@ -20,4 +20,5 @@ quick-sort/quick-sort
 random/random
 selection-sort/selection-sort
 swap-sort/swap-sort
+monkey-sort/monkey-sort
 data/*/
