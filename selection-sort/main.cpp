@@ -29,8 +29,8 @@ int main(int argc, char *argv[]) {
     std::ofstream fout(argv[outIndex + 1]);
     int n;
 
-    vector<int> v(n);
     fin >> n;
+    vector<int> v(n);
     for (int i = 0; i < n; i++)
         fin >> v[i];
 
@@ -45,9 +45,10 @@ int main(int argc, char *argv[]) {
     }
     int t2 = clock();
 
+    fout << t2 - t1 << endl;
+
     for (int i = 0; i < n; i++)
         fout << v[i] << endl;
 
-    cout << t2 - t1 << endl;
     return 0;
 }

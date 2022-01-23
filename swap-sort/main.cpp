@@ -27,9 +27,8 @@ int main(int argc, char *argv[]) {
 
     std::ifstream fin(argv[inIndex + 1]);
     std::ofstream fout(argv[outIndex + 1]);
-    long long i, n, j, t, t1, t2;
+    long long i, n, j, t1, t2;
     fin >> n;
-    fout << n << endl;
     vector<long long> S(n);
     for (i = 0; i < n; i++) {
         fin >> S[i];
@@ -43,8 +42,7 @@ int main(int argc, char *argv[]) {
         }
     }
     t2 = clock();
-    t = t2 - t1;
-    fout << t << " ms" << endl;
+    fout << t2 - t1 << endl;
     for (i = 0; i < n; i++) {
         fout << S[i] << ' ';
     }

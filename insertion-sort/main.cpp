@@ -40,10 +40,10 @@ int main(int argc, char *argv[]) {
             swap(v[j - 1], v[j]);
     int t2 = clock();
 
+    fout << t2 - t1 << endl;
+
     for (int i = 0; i < n; i++)
         fout << v[i] << endl;
-
-    cout << t2 - t1 << endl;
 
     return 0;
 }

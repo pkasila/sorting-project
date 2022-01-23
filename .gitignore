@@ -11,13 +11,13 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 cmake-build-debug
-out/text*
 .DS_Store
 
+boilerplate/boilerplate
 insertion-sort/insertion-sort
 merge-sort/merge-sort
 quick-sort/quick-sort
 random/random
 selection-sort/selection-sort
 swap-sort/swap-sort
-data
+data/*/
