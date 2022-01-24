@@ -21,4 +21,6 @@ random/random
 selection-sort/selection-sort
 swap-sort/swap-sort
 monkey-sort/monkey-sort
+std-sort/std-sort
+inverse/inverse
 data/*/

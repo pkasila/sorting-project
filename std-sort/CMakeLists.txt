@@ -1,0 +1,1 @@
+add_executable(std-sort main.cpp)

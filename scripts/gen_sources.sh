@@ -8,5 +8,8 @@ mkdir -p data/source
 ./random/random -n 40000 -min -10000 -max 10000 -out data/source/40k_10000.txt
 ./random/random -n 40000 -min -100 -max 100 -out data/source/40k_100.txt
 
-./random/random -n 100000 -min -10000 -max 10000 -out data/source/100k_10000.txt
-./random/random -n 100000 -min -100 -max 100 -out data/source/100k_100.txt
+./random/random -n 1000000 -min -10000 -max 10000 -out data/source/1m_10000.txt
+./random/random -n 1000000 -min -100 -max 100 -out data/source/1m_100.txt
+
+./random/random -n 2000000 -min -10000 -max 10000 -out data/source/2m_10000.txt
+./random/random -n 2000000 -min -100 -max 100 -out data/source/2m_100.txt
