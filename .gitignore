@@ -23,4 +23,5 @@ swap-sort/swap-sort
 monkey-sort/monkey-sort
 std-sort/std-sort
 inverse/inverse
+csv-generator/csv-generator
 data/*/

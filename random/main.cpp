@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
     ofstream fout(argv[outIndex + 1]);
     fout << n << endl;
     for (i = 0; i < n; i++) {
-        x = rand() % (max - min) + min;
+        x = rand() % (max - min + 1) + min;
         fout << x << endl;
     }
     return 0;
