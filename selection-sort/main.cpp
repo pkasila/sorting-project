@@ -2,6 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <ctime>
+#include <cstring>
 
 using namespace std;
 

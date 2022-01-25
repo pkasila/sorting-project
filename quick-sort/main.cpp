@@ -2,6 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <ctime>
+#include <cstring>
 
 void quicksort(std::vector<int> &mas, int first, int last) {
     int mid;

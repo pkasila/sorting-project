@@ -1,6 +1,9 @@
 #include <iostream>
 #include <fstream>
+#include <cstring>
 #include <vector>
+#include <ctime>
+#include <algorithm>
 
 static int find_keyword(int argc, char *argv[], const char *keyword) {
     for (int i = 0; i < argc; i++) {

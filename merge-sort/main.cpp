@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <cstring>
+#include <ctime>
 
 using namespace std;
 
