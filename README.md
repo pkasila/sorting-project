@@ -7,6 +7,6 @@ studying the theory of sorting algorithms in C++. It was necessary to compare di
 
 # What has been done?
 - [x] Generation of source data
-- [x] Slow sorting algorithms (`selection`,` insertion`, `swap` /` bubble`)
-- [x] Fast sorting algorithms (`merge`,` qsort`, comparison with `std::sort`)
+- [x] Slow sorting algorithms (`selection`, `insertion`, `swap`/` bubble`)
+- [x] Fast sorting algorithms (`merge`, `qsort`, comparison with `std::sort`)
 - [x] Scripts for testing and data collection
