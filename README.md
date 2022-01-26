@@ -1,5 +1,5 @@
 # Sorting arrays
-Group assignment at the Lyceum BSU on sorting arrays using different sorting algorithms.
+A group assignment at the Lyceum BSU on sorting arrays using different sorting algorithms.
 
 # Why this project?
 This project is a project that groups of students at the Lyceum BSU had to complete afterwards
