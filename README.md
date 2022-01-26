@@ -2,8 +2,8 @@
 A group assignment at the Lyceum BSU on sorting arrays using different sorting algorithms.
 
 # What is this project?
-This project is a project that groups of students at the Lyceum BSU had to complete afterwards
-studying the theory of sorting algorithms in C++. It was necessary to compare different sorting algorithms.
+This project is a project that groups of students at the Lyceum BSU had to complete after
+learning the theory behind sorting algorithms. It was necessary to compare different sorting algorithms.
 
 # What has been done?
 - [x] Generation of source data
