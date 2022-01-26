@@ -28,11 +28,29 @@ void bogosort(int *arr, int n) {
       shuffle(arr, n);
    }
 }
-int main()
-{
-    cout << "started" << endl;
-    ifstream fin ("input.txt");
-    ofstream fout ("output.txt");
+static int find_keyword(int argc, char *argv[], const char *keyword) {
+    for (int i = 0; i < argc; i++) {
+        if (strcmp(argv[i], keyword) == 0) return i;
+    }
+    return -1;
+}
+
+int main(int argc, char *argv[]) {
+    const int inIndex = find_keyword(argc, argv, "-in");
+    if (inIndex < 0) {
+        printf("No -in keyword found!  Exiting!\n");
+        exit(10);
+    }
+
+    const int outIndex = find_keyword(argc, argv, "-out");
+    if (outIndex < 0) {
+        printf("No -out keyword found!  Exiting!\n");
+        exit(10);
+    }
+
+    std::cout << "started" << std::endl;
+    std::ifstream fin(argv[inIndex + 1]);
+    std::ofstream fout(argv[outIndex + 1]);
     int n;
     fin >> n;
     int v[n];
@@ -41,12 +59,11 @@ int main()
         fin >> v[i];
 
     int t1 = clock();
-    cout << "t1 = " << t1 << endl;
     bogosort(v, n);
-    for(int i = 0; i < n; i++)
-        fout << v[i] << endl;
-
     int t2 = clock();
-    cout << t2-t1 << endl;
+    fout << t2-t1 << endl;
+
+    for(int i = 0; i < n; i++)
+        fout << v[i] << ' ';
     return 0;
 }

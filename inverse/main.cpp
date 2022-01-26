@@ -1,8 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <algorithm>
-#include <cstring>
 
 static int find_keyword(int argc, char *argv[], const char *keyword) {
     for (int i = 0; i < argc; i++) {
@@ -36,6 +34,8 @@ int main(int argc, char *argv[]) {
         fin >> i;
         v.emplace_back(i);
     }
+
+    v.pop_back();
 
     std::reverse(v.begin(), v.end());
 
